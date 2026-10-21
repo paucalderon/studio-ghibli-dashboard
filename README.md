@@ -1,16 +1,88 @@
-# React + Vite
+# *Studio Ghibli Movie Dashboard 🌱*
+# Web Development Project 5 - Studio Ghibli Movie Dashboard 🌱
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Submitted by: **Ana Calderón**
 
-Currently, two official plugins are available:
+This web app: **A Studio Ghibli Movie Dashboard built with React that fetches movie data from the Studio Ghibli API. Users can search movies by title, filter movies by release year, view movie information and Rotten Tomatoes scores, and explore summary statistics that update dynamically based on the displayed movies.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Time spent: **7 hours spent in total**
 
-## React Compiler
+## Required Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The following **required** functionality is completed:
 
-## Expanding the ESLint configuration
+- [x] **Dashboard displays data from an API**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  - [x] Displays Studio Ghibli movies fetched from the Studio Ghibli API.
+  - [x] Displays multiple movies, with information such as title, release date, poster, and Rotten Tomatoes score.
+  - [x] Each movie card displays at least two pieces of information about the movie.
+
+- [x] **Uses `useEffect` and `async/await`**
+
+  - [x] Uses `useEffect` to fetch movie data when the component loads.
+  - [x] Uses `async/await` and `fetch()` to retrieve data from the API.
+  - [x] Includes loading and error handling.
+
+- [x] **Dashboard includes at least three summary statistics**
+
+  - [x] Displays the number of movies currently shown.
+  - [x] Displays the average Rotten Tomatoes score.
+  - [x] Displays the highest Rotten Tomatoes score.
+  - [x] Updates the statistics based on the filtered movies.
+
+- [x] **Search bar**
+
+  - [x] Allows users to search for movies by title.
+  - [x] Updates the displayed movies as the search changes.
+
+- [x] **At least one additional filter**
+
+  - [x] Includes a release-year slider to filter movies by year.
+  - [x] Allows users to combine the release-year filter with the title search.
+
+## Optional Features
+
+The following **optional** features are implemented:
+
+- [x] **Multiple filters**
+
+  - [x] Users can combine the title search and release-year filter.
+
+- [x] **Different input types**
+
+  - [x] Uses a text input for searching and a slider for filtering by release year.
+
+- [ ] **Specific bounds for filters**
+
+  - [ ] Add explicit minimum and maximum bounds to the filter, if required by the rubric.
+
+## Additional Features
+
+- [x] Displays movie posters and Rotten Tomatoes score badges.
+- [x] Shows a message when no movies match the selected search and filter criteria.
+- [x] Includes loading and error messages when fetching movie data.
+- [x] Uses a Studio Ghibli-inspired background image.
+- [x] Uses Google Fonts: Fredoka and Nunito.
+- [x] Features translucent, glass-style cards.
+- [x] Includes hover effects and responsive CSS styling.
+- [x] Uses a custom color palette and playful visual details inspired by Studio Ghibli.
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented features:
+
+demo.gif
+
+## Notes
+
+One challenge I encountered was working with the filtering logic and calculating summary statistics, especially making sure the search bar and release-year slider worked together correctly. I also had to keep track of adding the right CSS class names throughout my JSX so I could style each part of the dashboard the way I wanted. I spent a lot of time refining the CSS to achieve the Studio Ghibli-inspired design. I spent a lot of time creating my gif cause it wasn't working for some reason. Spent about 2 hrs figuring that out.
+
+## License
+
+Copyright 2026 Ana Calderon
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at:
+
+[http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
