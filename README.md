@@ -81,7 +81,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-![Studio Ghibli Dashboard Demo](demo.gif)
+![Studio Ghibli Dashboard Demo](updated-demo.gif)
 
 ## Notes
 
